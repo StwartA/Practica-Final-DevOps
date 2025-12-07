@@ -54,17 +54,6 @@ app.get("/", (req, res) => {
                 font-size: 14px;
                 color: #38bdf8;
             }
-
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(15px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
         </style>
     </head>
     <body>
@@ -78,6 +67,4 @@ app.get("/", (req, res) => {
     `);
 });
 
-app.listen(3000, () => {
-    console.log("App running on port 3000");
-});
+module.exports = app;
